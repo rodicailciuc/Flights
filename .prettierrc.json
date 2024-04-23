@@ -15,6 +15,13 @@
 				"tabWidth": 4,
 				"useTabs": false
 			}
-		}
+		},
+		{
+		"files": ["*.json"],
+		"options": {
+	          "tabWidth": 2,
+			  "useTabs": false
+			}
+		  }
 	]
 }

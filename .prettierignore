@@ -7,3 +7,4 @@ coverage
 .eslintrc.json
 .gitignore
 .eslintignore
+assets

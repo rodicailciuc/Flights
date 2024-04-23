@@ -1,17 +1,18 @@
-# Image gallery
+# Flight Schedule
 
 > A simple
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Flight Schedule](#flight-schedule)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Features](#features)
+  - [Status](#status)
 
 ## General info
 
@@ -20,7 +21,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./assets/screenshot.png)
 
 ## Technologies
 
@@ -36,21 +37,27 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
+const loadHandler = () => {
+	const hadingTitle = createTitle(data.header);
+	dom.container.append(hadingTitle);
 
+	const sortedFlight = sortFlight(data.flights);
+	sortedFlight.forEach((flightData) => {
+		const flightDom = createFlight(flightData);
+		dom.container.append(flightDom);
+	});
+};
 ```
 
 ## Features
 
 List of features ready and Todos for future development
 
--
--
--
+- Hero image
+- Title of flight schedule
+- List of flight details
 
-To-do list:
 
--
--
 
 ## Status
 
